@@ -40,7 +40,7 @@ body {
     width: 70%;
     height: 100vh;
     background-image: url(images/blazer-front-img.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
     top: .5rem;
@@ -148,14 +148,14 @@ h3 {
 }
 
 .sign-up-img {
-    height: 95vh;
-    width: 60vw;
+    height: 90vh;
+    width: 70%;
     background-image: url(images/blazer-back-img.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    top: 1rem;
-    right: -17rem;
+    top: .5rem;
+    right: -15px;
     z-index: -1;
 }
 
