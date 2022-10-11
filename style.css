@@ -186,6 +186,10 @@ input[type=color] {
     min-width: 100px;
 }
 
+form:invalid > .form-group {
+    /* border-color: rgb(192, 69, 69); */
+}
+
 .button-group {
     display: flex;
     justify-content: space-between;
@@ -196,4 +200,8 @@ input[type=color] {
     margin-top: -2.2rem;
     bottom: -3.1rem;
     max-width: 250px;
+}
+
+.active {
+    color: var(--clr-gold);
 }
