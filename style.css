@@ -2,6 +2,8 @@
     --clr-gold: #F4C474;
     --clr-linear-gold: linear-gradient(135deg, #ECBF6F 0%, #C09E50 100%);
     --clr-text: #FFFFFF;
+    
+    --container-max-width: 1000px;
 }
 
 html {
@@ -25,28 +27,32 @@ body {
 } 
 
 .container {
-    background-color: #000000;
-    max-width: 1000px;
+    max-width: var(--container-max-width);
     margin: 0 auto;
     height: 100vh;
     display: flex;
-    padding-left: 9rem;
+    padding-block: 1rem;
+    position: relative;
+}
+
+.home-img {
+    width: 70%;
+    height: 100vh;
+    background-image: url(images/blazer-front-img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: .5rem;
+    right: -15px;
+    z-index: -1;
 }
 
 .left {
-    max-width: 40%;
-    margin-left: -11rem;
-    overflow: visible;
+    width: 40%;
     padding-right: 3rem;
-    padding-top: 1rem;
 }
 
-.left .content {
-    /* width: 500px; */
-    /* background: blue; */
-}
-
- h1 {
+h1 {
     font-size: 80px;
     margin: 0 0 25px -40px;
 }
@@ -60,25 +66,25 @@ p {
 button {
     font-size: 20px;
     font-weight: 600;
-    padding: 1.6rem 4.5rem;
+    padding: 1.3rem;
+    width: 100%;
     color: var(--clr-text);
-    background-image: var(--clr-linear-gold);
+    background: var(--clr-gold);
     border: none;
     border-radius: 50vw;
     cursor: pointer;
-    transition: opacity 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
 }
 
 button:hover {
-    opacity: .9;
+    background: #c59d59;
 }
 
+/* ===== RIGHT ===== */
 
 .right {
-    padding-left: 5rem;
-    padding-top: 4rem;
-    /* max-width: 100%; */
-    background-image: url(images/blazer-front-img.png);
+    margin-top: 10rem;
+    padding-left: 6rem;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -86,13 +92,17 @@ button:hover {
 }
 
 nav {
+    position: absolute;
     font-size: 25px;
+    top: 2rem;
+    right: 0;
 }
 
 ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: end;
+    padding-right: 1rem;
 }
 
 a {
@@ -102,6 +112,7 @@ a {
 
 li {
     transition: color 100ms ease-in-out;
+    margin-left: 7rem;
 }
 
 li:hover, li:active {
@@ -114,11 +125,22 @@ h3 {
     font-size: 1.5rem;
 }
 
+/* ===== LOG IN ===== */
+
+.login button {
+    float: right;
+    max-width: 200px;
+}
+
+.login input {
+    left: 9rem;
+}
+
 
 .sign-up {
     position: relative;
     min-height: 100vh;
-    max-width: 1000px;
+    max-width: var(--container-max-width);
     margin: 0 auto;
     padding-top: 1rem;
 }
@@ -172,5 +194,6 @@ input[type=color] {
 .button-group button {
     position: relative;
     margin-top: -2.2rem;
-    bottom: -3.5rem;
+    bottom: -3.1rem;
+    max-width: 250px;
 }
