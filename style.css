@@ -33,6 +33,7 @@ body {
     display: flex;
     padding-block: 1rem;
     position: relative;
+    transition: all 1500ms ease-in-out;
 }
 
 .home-img {
@@ -143,6 +144,7 @@ h3 {
     max-width: var(--container-max-width);
     margin: 0 auto;
     padding-top: 1rem;
+    transition: all 5000ms ease-in-out;
 }
 
 .sign-up-img {
