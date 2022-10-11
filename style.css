@@ -1,7 +1,7 @@
 :root {
     --clr-gold: #F4C474;
     --clr-linear-gold: linear-gradient(135deg, #ECBF6F 0%, #C09E50 100%);
-    --clr-text: #FFFFFF;
+    --clr-text: #EEE;
     
     --container-max-width: 1000px;
 }
@@ -186,8 +186,9 @@ input[type=color] {
     min-width: 100px;
 }
 
-form:invalid > .form-group {
-    /* border-color: rgb(192, 69, 69); */
+
+form:invalid > button {
+    cursor: wait;
 }
 
 .button-group {
