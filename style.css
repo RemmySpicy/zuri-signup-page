@@ -10,7 +10,7 @@ html {
 
 body {
     background: #111111;
-    background-image: linear-gradient(to right, #111111 0% 50%, #000000 50% 100%);
+    background-image: linear-gradient(to right, #111111 0% 20%, #000000 20% 100%);
     color: var(--clr-text);
     font-family: sans-serif;
     padding-inline: 2rem;
@@ -46,7 +46,7 @@ body {
     /* background: blue; */
 }
 
-.left h1 {
+ h1 {
     font-size: 80px;
     margin: 0 0 25px -40px;
 }
@@ -95,6 +95,11 @@ ul {
     justify-content: space-around;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 li {
     transition: color 100ms ease-in-out;
 }
@@ -107,4 +112,65 @@ h3 {
     color: var(--clr-gold);
     margin-top: -2.1rem;
     font-size: 1.5rem;
+}
+
+
+.sign-up {
+    position: relative;
+    min-height: 100vh;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+.sign-up-img {
+    height: 95vh;
+    width: 60vw;
+    background-image: url(images/blazer-back-img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1rem;
+    right: -17rem;
+    z-index: -1;
+}
+
+.form-group {
+    margin-bottom: 2.5rem;
+    border-bottom: 4px solid gray;
+    border-radius: .2rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+label {
+    font-size: 24px;
+    position: absolute;
+    width: 100%;
+}
+
+input, select {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--clr-gold);
+    font-size: 1.5rem;
+    position: relative;
+    left: 14rem;
+    width: calc(100% - 14rem);
+}
+
+input[type=color] {
+    min-width: 100px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-group button {
+    position: relative;
+    margin-top: -2.2rem;
+    bottom: -3.5rem;
 }
