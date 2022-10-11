@@ -13,7 +13,8 @@ body {
     background-image: linear-gradient(to right, #111111 0% 50%, #000000 50% 100%);
     color: var(--clr-text);
     font-family: sans-serif;
-    padding-left: 10rem;
+    padding-inline: 2rem;
+    overflow: hidden;
 }
 
 *, 
@@ -29,13 +30,14 @@ body {
     margin: 0 auto;
     height: 100vh;
     display: flex;
+    padding-left: 9rem;
 }
 
 .left {
     max-width: 40%;
-    margin-left: -10rem;
+    margin-left: -11rem;
     overflow: visible;
-    padding-right: 5rem;
+    padding-right: 3rem;
     padding-top: 1rem;
 }
 
@@ -63,13 +65,19 @@ button {
     background-image: var(--clr-linear-gold);
     border: none;
     border-radius: 50vw;
+    cursor: pointer;
+    transition: opacity 100ms ease-in-out;
+}
+
+button:hover {
+    opacity: .9;
 }
 
 
 .right {
     padding-left: 5rem;
     padding-top: 4rem;
-    max-width: 100%;
+    /* max-width: 100%; */
     background-image: url(images/blazer-front-img.png);
     background-size: cover;
     display: flex;
@@ -85,9 +93,18 @@ ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
-    tras
 }
 
-li:hover {
+li {
+    transition: color 100ms ease-in-out;
+}
+
+li:hover, li:active {
     color: var(--clr-gold);
+}
+
+h3 {
+    color: var(--clr-gold);
+    margin-top: -2.1rem;
+    font-size: 1.5rem;
 }
