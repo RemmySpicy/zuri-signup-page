@@ -15,7 +15,7 @@ body {
     background-image: linear-gradient(to right, #111111 0% 20%, #000000 20% 100%);
     color: var(--clr-text);
     font-family: sans-serif;
-    padding-inline: 2rem;
+    padding-inline: 3rem;
     /* overflow: hidden; */
 }
 
@@ -39,12 +39,18 @@ body {
     inset: 0; */
 }
 
+.container > * {
+    background: transparent;
+}
+
 .home-img {
-    width: 70%;
+    width: 100%;
     height: 100vh;
     background-image: url(images/blazer-front-img.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 70%;
     position: absolute;
     top: .5rem;
     right: -15px;
@@ -166,10 +172,12 @@ h3 {
 
 .sign-up-img {
     height: 100vh;
-    width: 70%;
+    width: 100%;
     background-image: url(images/blazer-back-img.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 70%;
     position: absolute;
     top: .5rem;
     right: -15px;
@@ -180,12 +188,12 @@ h3 {
     margin-bottom: 2.5rem;
     border-bottom: 4px solid gray;
     border-radius: .2rem;
-    padding-bottom: 1rem;
+    padding-bottom: .75rem;
     position: relative;
 }
 
 label {
-    font-size: 24px;
+    font-size: 22px;
     position: absolute;
     width: 100%;
     cursor: pointer;
@@ -203,7 +211,7 @@ input, select {
 }
 
 input[type=color] {
-    min-width: 100px;
+    max-width: 150px;
 }
 
 
