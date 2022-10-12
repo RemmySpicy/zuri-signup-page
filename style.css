@@ -16,7 +16,7 @@ body {
     color: var(--clr-text);
     font-family: sans-serif;
     padding-inline: 2rem;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 *, 
@@ -29,11 +29,14 @@ body {
 .container {
     max-width: var(--container-max-width);
     margin: 0 auto;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     padding-block: 1rem;
     position: relative;
-    transition: all 1500ms ease-in-out;
+    transition: all 1200ms ease-in-out;
+    
+    /* position: fixed;
+    inset: 0; */
 }
 
 .home-img {
@@ -120,6 +123,15 @@ li:hover, li:active {
     color: var(--clr-gold);
 }
 
+nav .img {
+    width: 30px;
+    background-image: url(/images/profile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    /* color: inherit; */
+    /* fill: inherit; */
+}
+
 h3 {
     color: var(--clr-gold);
     margin-top: -2.1rem;
@@ -140,11 +152,15 @@ h3 {
 
 .sign-up {
     position: relative;
-    min-height: 100vh;
+    height: 100vh;
     max-width: var(--container-max-width);
     margin: 0 auto;
     padding-top: 1rem;
-    transition: all 5000ms ease-in-out;
+    transition: all 1200ms ease-in-out;
+    /* overflow: scroll; */
+
+    /* position: fixed; */
+    /* inset: 0; */
 }
 
 .sign-up-img {
