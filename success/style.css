@@ -54,6 +54,8 @@ body {
 
 img {
     max-width: 150px;
+    fill: var(--clr-gold);
+    color: var(--clr-gold);
 }
 
 h2 {
