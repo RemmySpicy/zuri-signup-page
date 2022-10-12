@@ -157,6 +157,7 @@ h3 {
     max-width: var(--container-max-width);
     margin: 0 auto;
     padding-top: 1rem;
+    padding-bottom: 1.5rem;
     transition: all 1200ms ease-in-out;
 
     /* position: fixed; */
