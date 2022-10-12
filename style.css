@@ -123,13 +123,12 @@ li:hover, li:active {
     color: var(--clr-gold);
 }
 
-nav .img {
+/* profile icon */
+nav img {
     width: 30px;
-    background-image: url(/images/profile.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    /* color: inherit; */
-    /* fill: inherit; */
+
+    color: var(--clr-text);
+    fill: var(--clr-text);
 }
 
 h3 {
@@ -150,14 +149,15 @@ h3 {
 }
 
 
+/* ===== REGISTRATION PAGE ===== */
+
 .sign-up {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     max-width: var(--container-max-width);
     margin: 0 auto;
     padding-top: 1rem;
     transition: all 1200ms ease-in-out;
-    /* overflow: scroll; */
 
     /* position: fixed; */
     /* inset: 0; */
@@ -187,6 +187,7 @@ label {
     font-size: 24px;
     position: absolute;
     width: 100%;
+    cursor: pointer;
 }
 
 input, select {
