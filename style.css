@@ -165,7 +165,7 @@ h3 {
 }
 
 .sign-up-img {
-    height: 90vh;
+    height: 100vh;
     width: 70%;
     background-image: url(images/blazer-back-img.png);
     background-size: cover;
@@ -211,16 +211,12 @@ form:invalid > button {
     cursor: wait;
 }
 
-.button-group {
-    display: flex;
-    justify-content: space-between;
-}
-
-.button-group button {
+.sign-up button {
     position: relative;
-    margin-top: -2.2rem;
-    bottom: -3.1rem;
-    max-width: 250px;
+    max-width: 300px;
+    margin-top: -1rem;
+    margin-bottom: 1.5rem;
+    float: right;
 }
 
 .active {
