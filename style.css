@@ -45,7 +45,7 @@ body {
 
 .home-img {
     width: 100%;
-    height: 100vh;
+    min-height: 100%;
     background-image: url(images/blazer-front-img.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -171,7 +171,7 @@ h3 {
 }
 
 .sign-up-img {
-    height: 100vh;
+    min-height: 100%;
     width: 100%;
     background-image: url(images/blazer-back-img.png);
     background-size: contain;
@@ -185,7 +185,7 @@ h3 {
 }
 
 .form-group {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2.3rem;
     border-bottom: 4px solid gray;
     border-radius: .2rem;
     padding-bottom: .75rem;
@@ -193,7 +193,7 @@ h3 {
 }
 
 label {
-    font-size: 22px;
+    font-size: 24px;
     position: absolute;
     width: 100%;
     cursor: pointer;
