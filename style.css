@@ -148,6 +148,7 @@ h3 {
 .login button {
     float: right;
     max-width: 200px;
+    margin-top: -1.3rem;
 }
 
 .login input {
